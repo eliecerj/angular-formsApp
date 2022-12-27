@@ -20,5 +20,15 @@
         routerLinkActive="active">
         {{ item.text }}
     </li>
-    
+</ul>
+
+<h2 class="mt-3">Validaciones</h2>
+<hr>
+<ul class="list-group">
+    <li *ngFor="let item of validacionesMenu"
+        class="list-group-item"
+        [routerLink]="[ item.route ]"
+        routerLinkActive="active">
+        {{ item.text }}
+    </li>
 </ul>
